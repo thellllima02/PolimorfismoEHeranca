@@ -1,3 +1,4 @@
+package BancoEncapsulado;
 public class Cliente {
     
     private String nome;

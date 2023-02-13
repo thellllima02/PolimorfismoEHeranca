@@ -1,4 +1,4 @@
-package bytebank-encapsulado;
+package BancoEncapsulado ;
 
 public class Conta {
     private double saldo;
