@@ -1,0 +1,61 @@
+package Classes;
+
+
+public class Employee {
+    
+    private String Nome;
+    private String SobreNome;
+    private double MesSalario;
+
+    /*public Employee(String Nome, String SobreNome, double MesSalario) {
+      *  this.Nome = Nome;
+       * this.SobreNome = SobreNome;
+        *if (MesSalario > 0) {
+         *   this.MesSalario = MesSalario;
+        *}
+    *}
+*/
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String nome) {
+        this.Nome = nome;
+    }
+
+    public String getSobreNome() {
+        return SobreNome;
+    }
+
+    public void setSobreNome(String sobreNome) {
+        this.SobreNome = sobreNome;
+    }
+
+    public double getMesSalario() {
+        return MesSalario;
+    }
+
+    public void setMesSalario(double mesSalario) {
+        if (mesSalario > 0) {
+            this.MesSalario = mesSalario;
+        }
+    }
+
+    public double getAnualSalario() {
+        return MesSalario * 12;
+    }
+
+    public void aplicacaoSalarioAcresimo(double porcentagem) {
+        if (porcentagem > 0) {
+            double increaseAmount = MesSalario * porcentagem / 100;
+            MesSalario += increaseAmount;
+        }
+    }
+    
+    public double getAplicacao(){
+        return MesSalario;
+    }
+}
+    
+

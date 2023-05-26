@@ -1,0 +1,48 @@
+package Classes;
+
+import javax.swing.JOptionPane;
+import javax.swing.plaf.RootPaneUI;
+
+
+public class Date {
+    
+    private int Mes;
+    private int Dia;
+    private int Ano;
+
+    /*public Date(int month, int day, int year) {
+      *  this.Mes = month;
+       * this.Dia = day;
+        *this.Ano = year;
+    *}
+*/
+
+    public int getMes() {
+        return Mes;
+    }
+
+    public void setMes(int mes) {
+        this.Mes = mes;
+    }
+
+    public int getDia() {
+        return Dia;
+    }
+
+    public void setDia(int dia) {
+        this.Dia = dia;
+    }
+
+    public int getAno() {
+        return Ano;
+    }
+
+    public void setAno(int ano) {
+        this.Ano = ano;
+    }
+
+    public void displayDate() {
+        JOptionPane.showMessageDialog(null, +Dia + "/" + Mes + "/" + Ano);
+    }
+    
+}
